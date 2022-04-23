@@ -1,22 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int n,x,y,z,k=0;
+    int n,i,a,b,c;
     scanf("%d",&n);
-    x=0;
-    y=1;
-    z=x+y;
-    printf("%d %d ",x,y);
-    while(z!=0)
+    a=0;
+    b=1;
+    c=a+b;
+    printf("%d %d ",a,b);
+    for(i=3;i<=n;i++)
     {
-        printf("%d ",z);
-       x=y;
-       y=z;
-       z=x+y;
-       k++;
-       if(k==n-2)
-       {
-           break;
-       }
+        c=a+b;
+        a=b;
+        b=c;
+        printf("%d ",b);
     }
 }
