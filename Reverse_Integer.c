@@ -1,15 +1,15 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
- int n, r = 0;
- scanf("%d", &n);
- while (n != 0)
- {
- r = r * 10;
- r = r + n%10;
- n = n/10;
- }
- printf("%d
-",r);
- return 0;
-}
+    signed int n,r,t,rev=0;
+    scanf("%d",&n);
+    t=n;
+    while(n)
+    {
+        r=n%10;
+        rev=(rev*10)+r;
+        n=n/10;
+    }
+    printf("%d",rev);
+    return 0;
+}//reverse
