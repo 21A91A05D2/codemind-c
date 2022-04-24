@@ -1,15 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int n;
-    char str[100],i,j;
+    int n,i,j,k,z=1;
     scanf("%d",&n);
-    for(i=65;i<65+n;i++)
+    for(i=1;i<=n;i++)
     {
-        for(j=65;j<65+n;j++)
+        for(j=n-1;j>=i;j--)
         {
-            printf("%c ",i);
+            printf(" ");
         }
+        for(k=0;k<z;k++)
+        {
+            printf("%d",i);
+        }
+        z+=2;
         printf("
 ");
     }
